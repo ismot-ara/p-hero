@@ -129,7 +129,94 @@ console.log(k);
 // 20. undefined
 console.log(fruits[10]);
 //21. 
+fruits.push("Kiwi");
+console.log(fruits);
+fruits.pop();
+//remove first 
+const array1 = [1, 2, 3];
 
+const firstElement = array1.shift();
+//add in first
+console.log(array1.unshift(4, 5));
+// Expected output: 5
 
+console.log(array1);
+// Expected output: Array [4, 5, 1, 2, 3]
+/* 24.  তোমার কাছে: ৮০০০০ টাকার বেশি হলে তুমি mac কিনবে, ৬০ টাকার বেশি হলে gaming ল্যাপটপ কিনবে, ৪০ হাজার টাকার বেশি হলে lenovo yoga কম্পিউটার কিনবে , ২০ হাজার টাকার বেশি হলে পুরান ল্যাপটপ কিনবে। না হয় তুমি মোবাইল দিয়ে কাজ চালাবে। */
+var money = 1000;
+if(money > 80000){
+    console.log('You can buy Mac');
+} else if(money > 60000){
+    console.log('You can buy gaming laptop');  
+} else if(money > 40000){
+    console.log('You can buy Lenevo yoga computer');
+} else{
+    console.log('You can buy Old laptop');
+}
+/**২৫. আসকে আমার মন ভালো নেই এই কথা ৩৯ বার আউটপুট হিসেবে দেখাও।  */
+for(i = 1; i < 40; i++){
+    console.log(i  + " আসকে আমার মন ভালো নেই");
+}
 
+//২৬. while লুপ কিভাবে কাজ করে
+let count = 1;
+while(count < 5){
+    console.log("javascript is fun");
+    count++;
+}
+/**২৭. for লুপ কিভাবে কাজ করে 
+ * ২৮. while লুপ এর মধ্যে লুপ ভেরিয়েবল চেইঞ্জ না করলে কি সমস্যা হয়। 
+ * unlimited output
+ * ২৯. একটা কোড লিখে ৫৮ থেকে ৯৮ পর্যন্ত যত সংখ্যা আছে সেগুলাকে দেখাও
+ */
+var p29 = 58;
+while( p29 <= 98){
+    console.log(p29);
+    p29++;
+}
+/**
+ * ৩০.একটা কোড লিখে ৪১২ থেকে ৪৫৬ পর্যন্ত যত জোর সংখ্যা আছে সেগুলাকে দেখাও
+ * ৩১. একটা কোড লিখে ৫৮১ থেকে ৬২৩ পর্যন্ত যত বিজোড় সংখ্যা আছে সেগুলাকে দেখাও 
+ * ৩২.while আর for loop এর মধ্যে পার্থক্য কি 
+ */
+var p30 = 412;
+while( p30 <= 456){
+    console.log(p30);
+    p30+=2;
+}
+var p31 = 581;
+while( p31 <= 623){
+    console.log(p31);
+    p31+=2;
+}
+/**৩৩ তুমি এতদিন যা যা জিনিস শিখছো সেগুলার নাম দিয়ে একটা array বানাও। তারপর একটা for লুপ দিয়ে সেই array এর সব উপাদান কে আউটপুট হিসেবে দেখাও।  
+ * ৩৪. তুমি এতদিন পর্যন্ত যে যে মডেলের মোবাইল ফোন ইউজ করেছো সেগুলার নাম দিয়ে একটা array বানাও। তারপর একটা while লুপ দিয়ে সেই array এর উপাদান গুলা একটা একটা করে আউটপুট হিসেবে দেখাও 
+*/
 
+var learnSrity = ['html', 'css', 'bootstrap', 'wordpress', 'variable', 'array', 'loop'];
+for(i = 0; i < learnSrity.length; i++){
+    console.log(learnSrity[i]);
+}
+var i = 0;
+while(i < learnSrity.length){
+    //console.log(learnSrity[i]);
+    i++;
+}
+/**
+ * ৩৫. একটা ফর লুপ চালাও। ৩০ থেকে ৮৬ পর্যন্ত। আর এই লুপ ৪৪ এ গেলে ব্রেক করবে। সেই জিনিস কোড করে দেখাও 
+ */
+for(i = 30; i <= 86; i++){
+    if(i == 44){
+        
+        break;
+    }
+    console.log(i);
+}
+/**৩৬. তোমার যত বই আছে সেগুলার দাম নিয়ে একটা array লিখে ফেলো। যে বই গুলোর দাম ২০০ টাকার উপরে সেগুলাকে স্কিপ করবে। অর্থাৎ সেগুলাকে আউটপুট হিসেবে দেখাবে না। বাকিদের কে আউটপুট হিসেবে দেখাবে। দেখো করতে পারো কিনা।  */
+var bookPrice = [252, 632, 25, 86, 963, 123, 185];
+for(i = 0; i < bookPrice.length; i++){
+    if(bookPrice[i] > 200){
+        continue;
+    }
+    console.log(bookPrice[i]);
+}
