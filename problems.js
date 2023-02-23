@@ -87,10 +87,23 @@ var k = 40;
 k /= 4; // k = k / 4
 console.log(k);
 /**
- * Do you know what ++ and -- does?
+ * 11. Do you know what ++ and -- does?
  * ans: ++ increse value 1 from it's current value.
  * -- decrease value 1 from it's current value.
+ * 
+ * ১২ parseInt, parseFloat, toFixed এইগুলা কি করে? 
  */
+var x = "25";
+console.log(x);
+var y = parseInt(x);
+console.log(y);
+
+var d = "56.3256985";
+console.log(d);
+var e = parseFloat(d);
+console.log(e);
+
+
 
 
 
