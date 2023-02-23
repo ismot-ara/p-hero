@@ -90,21 +90,13 @@ console.log(k);
  * 11. Do you know what ++ and -- does?
  * ans: ++ increse value 1 from it's current value.
  * -- decrease value 1 from it's current value.
- * 
- * ১২ parseInt, parseFloat, toFixed এইগুলা কি করে? 
  */
-var x = "25";
-console.log(x);
-var y = parseInt(x);
-console.log(y);
 
-var d = "56.3256985";
-console.log(d);
-var e = parseFloat(d);
-console.log(e);
-
-
-
+var k = fruits.indexOf('Guava');
+console.log(k);
+// 20. undefined
+console.log(fruits[10]);
+//21. 
 
 
 
