@@ -90,7 +90,39 @@ console.log(k);
  * 11. Do you know what ++ and -- does?
  * ans: ++ increse value 1 from it's current value.
  * -- decrease value 1 from it's current value.
+
+
+* 12. parseInt, parseFloat, toFixed
+ * Ans:
  */
+var parse = "5263";
+var l = parseInt(parse);
+console.log(l);
+
+var s_string = "523.693556";
+console.log(parseFloat(s_string));
+
+var to_fixed = 23.5551;
+var t = to_fixed.toFixed(2);
+console.log(t);
+
+/***
+ * 13. how to declare array
+ * Ans:
+ */
+var fruits = ['Apple', 'Banana', 'Orange', 'Coconut', 'Guava', 'Watermelon', 'Mango', 'Dragon'];
+console.log(fruits);
+
+//14. how many elements in array?
+var len = fruits.length;
+console.log(len);
+ //15.How to work index in array? how to change it's value?
+fruits[6] = 'Bangi';
+console.log(fruits);
+//16. What is value is -1 of any index of array?
+// It's not exists in array
+//17. how to find value of an array with index?
+console.log(fruits[0]);
 
 var k = fruits.indexOf('Guava');
 console.log(k);
