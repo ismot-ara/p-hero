@@ -133,3 +133,34 @@ console.log(total);
 //2! = 2*1
 //3! = 3*2*1
 //4! = 4*3*2*1
+//21-8 Factorial using a while loop or a decrementing loop
+
+function factorial(number){
+    let result = 1;
+    for(let i = number; i>= 1; i--){
+        result = result * i;
+        console.log(i);
+    }
+    return result;
+}
+const fact = factorial(7);
+ console.log('factorial of 9: ', fact);
+ //21-9 Module Summary and Simple JavaScript debug
+ function getFactorial(number){
+    let factorial = 1;
+    for(let i = 1; i <=5; i++){
+        factorial= factorial*i;
+    }
+    return factorial;
+ }
+ const factorial = getFactorial(5);
+ console.log(factorial);
+//21.5.0
+ const namelist = ['peter', 'joao', 'rafael', 'claudio'];
+console.log(namelist.includes('peter')); 
+//true
+//concat()
+const array1 = [10, 20, 30, 40];
+const array2 = ['a', 'b', 'c', 'd'];
+const newArray = array1.concat(array2);
+console.log(newArray);
